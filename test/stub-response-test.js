@@ -77,5 +77,20 @@ describe("Mini Application Stub", () => {
       });
   });
 
+
+  it("should not mix responses", () => {
+    miniApp.stubApp("/test").respond("test");
+    miniApp.stubApp("/foo").respond("foo");
+    return Promise.all([
+      request
+        .get("http://localhost:3000/test")
+        .then((res) => expect(res.text).to.equal("test")),
+      request
+        .get("http://localhost:3000/foo")
+        .then((res) => expect(res.text).to.equal("foo"))
+    ]);
+  });
+
+
   afterEach(() => miniApp.close());
 });
