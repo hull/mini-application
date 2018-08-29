@@ -1,3 +1,6 @@
+## v1.1.1
+- pinned sinon dependency to `6.1.2`, stubApp method is broken on higher versions
+
 ## v1.1.0
 - upgraded most of the dependencies
 - added `reset` method to clean the stub and internal db states

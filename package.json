@@ -1,6 +1,6 @@
 {
   "name": "mini-application",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Microservice stubs using Express, Sinon and Event Emitter",
   "main": "src/mini-application.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "lodash": "^4.17.10",
     "lowdb": "^1.0.0",
     "shelljs": "^0.8.2",
-    "sinon": "^6.1.0",
+    "sinon": "6.1.2",
     "superagent": "^3.8.3"
   },
   "optionalDependencies": {
